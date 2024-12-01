@@ -13,9 +13,7 @@ export default function Home() {
   <Navbars/>
   <Carousel/>
   <Services/>
-  {/* <div className="min-h-screen bg-gray-100 flex justify-center items-center">
-     
-    </div> */}
+ 
     < CounterSectionWithAccordion/>
     <HeroSection />
     <ContactUs/>

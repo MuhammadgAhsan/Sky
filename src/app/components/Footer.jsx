@@ -7,7 +7,7 @@ import Link from 'next/link';
 
 export default function Footer() {
   return (
-    <footer className="bg-black text-white py-8">
+    <footer className=" text-white py-8" style={{ background: "var(--e-global-color-primary)" }}>
       <div className="container mx-auto px-6 text-center space-y-8">
 
         {/* Logo and Title */}

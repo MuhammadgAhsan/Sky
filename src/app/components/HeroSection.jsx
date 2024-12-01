@@ -44,10 +44,10 @@ export default function HeroSection() {
   }, []);
 
   return (
-    <div className="flex h-screen">
+    <div className="flex h-screen mt-18">
       {/* Left Side: Testimonials */}
-      <div className="w-1/2 p-8 bg-[#1c204e] flex flex-col justify-center items-center space-y-6 text-white rounded-lg shadow-lg">
-        <h2 className="text-4xl font-semibold mb-4">Special Offer</h2>
+      <div className="w-1/2 p-8 bg-[#1c204e] flex flex-col mt-10 justify-center items-center space-y-6 text-white" style={{ borderRadius: '10px 0 0 10px' }}>
+        <h2 className="text-1xl font-semibold  mt-10 ">Special Offer</h2>
         <h3 className="text-3xl font-bold">What They Say</h3>
         <div className="text-center max-w-md">
           <p className="text-lg italic">{testimonials[index].quote}</p>
@@ -83,15 +83,15 @@ export default function HeroSection() {
 
       {/* Right Side: Background Color & Image */}
       <div
-        className="w-1/2 relative bg-cover bg-center overflow-hidden rounded-lg"
+        className="w-1/2 relative bg-cover bg-center mt-10 overflow-hidden"
         style={{
           backgroundImage: "url('/bg-4.jpg')",
           backgroundColor: "var(--e-global-color-primary)", // Custom CSS variable for background color
+          borderRadius: '0 10px 10px 0' // Rounded corners on the right side
         }}
       >
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center">
           {/* Heading for Special Offer */}
-          {/* Optional: Play Icon (can remove or change if needed) */}
           <div className="text-6xl animate-pulse">
             <svg
               className="w-16 h-16"

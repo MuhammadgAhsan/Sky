@@ -35,7 +35,7 @@ export default function ContactUs() {
   };
 
   return (
-    <section className="bg-gradient-to-r from-blue-500 via-indigo-600 to-purple-600 py-16 px-6">
+    <section className="bg-black  py-16 px-6" style={{ background: "var(--e-global-color-primary)" }}>
       <div className="container mx-auto grid md:grid-cols-2 gap-10 bg-white shadow-2xl rounded-lg p-10">
         {/* Left Side: Contact Information */}
         <div className="text-gray-800 space-y-6">
