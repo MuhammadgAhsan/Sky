@@ -28,20 +28,18 @@ export default function CounterSectionWithAccordion() {
   };
 
   return (
-    <div className="container mx-auto flex flex-wrap-reverse mt-20 lg:flex-nowrap items-center gap-8">
+    <div className="container mx-auto flex flex-col lg:flex-row mt-20 items-center gap-8">
       {/* Left Section: Accordion */}
-      <div
-        className="px-6 py-8 w-full lg:w-1/2 bg-white rounded-lg shadow-lg"
-        style={{ borderRadius: "10px" }}
-      >
-        <h2 className="text-4xl font-bold mb-6" style={{ color: "var(--e-global-color-primary)" }}>
+      <div className="px-6 py-8 w-full lg:w-1/2 bg-white rounded-lg shadow-lg">
+        <h2 className="text-3xl lg:text-4xl font-bold mb-6 text-center lg:text-left" style={{ color: "var(--e-global-color-primary)" }}>
           Maintaining Homes in Pristine Condition
         </h2>
 
+        {/* Accordion - Why Us */}
         <div className="mb-4">
           <button
             onClick={() => toggleAccordion("why-us")}
-            className="flex items-center justify-between w-full text-left font-semibold text-xl"
+            className="flex items-center justify-between w-full text-left font-semibold text-lg lg:text-xl"
             style={{ color: "var(--e-global-color-primary)" }}
           >
             <span>— Why us?</span>
@@ -67,10 +65,11 @@ export default function CounterSectionWithAccordion() {
           )}
         </div>
 
+        {/* Accordion - How We Work */}
         <div className="mb-4">
           <button
             onClick={() => toggleAccordion("how-we-work")}
-            className="flex items-center justify-between w-full text-left font-semibold text-xl"
+            className="flex items-center justify-between w-full text-left font-semibold text-lg lg:text-xl"
             style={{ color: "var(--e-global-color-primary)" }}
           >
             <span>+ How do we work?</span>
@@ -87,10 +86,11 @@ export default function CounterSectionWithAccordion() {
           )}
         </div>
 
+        {/* Accordion - Rates */}
         <div className="mb-4">
           <button
             onClick={() => toggleAccordion("rates")}
-            className="flex items-center justify-between w-full text-left font-semibold text-xl"
+            className="flex items-center justify-between w-full text-left font-semibold text-lg lg:text-xl"
             style={{ color: "var(--e-global-color-primary)" }}
           >
             <span>+ What are your rates?</span>

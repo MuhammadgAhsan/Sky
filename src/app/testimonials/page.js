@@ -23,7 +23,7 @@ const PlumbingServices = () => {
     
 <>
 <Navbars/>
-<HeroSection c/>
+<HeroSection />
 
  
   <ContactUs/>

@@ -35,12 +35,12 @@ export default function ContactUs() {
   };
 
   return (
-    <section className="bg-black  py-16 px-6" style={{ background: "var(--e-global-color-primary)" }}>
-      <div className="container mx-auto grid md:grid-cols-2 gap-10 bg-white shadow-2xl rounded-lg p-10">
+    <section className="bg-black  mt-20 py-16 px-6 sm:px-12 md:px-16" style={{ background: "var(--e-global-color-primary)" }}>
+      <div className="container mt-20 mx-auto grid gap-10 bg-white shadow-2xl rounded-lg p-6 sm:grid-cols-1 md:grid-cols-2">
         {/* Left Side: Contact Information */}
         <div className="text-gray-800 space-y-6">
           <h2 className="text-2xl font-bold">Contact Us</h2>
-          <h1 className="text-4xl font-extrabold tracking-tight">
+          <h1 className="text-3xl md:text-4xl font-extrabold tracking-tight">
             Have Questions? <br /> Get in touch!
           </h1>
           <p className="text-gray-600">
@@ -66,7 +66,7 @@ export default function ContactUs() {
         {/* Right Side: Contact Form */}
         <div className="bg-gray-100 rounded-lg p-8 shadow-md">
           <form onSubmit={handleSubmit} className="space-y-6">
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <input
                 type="text"
                 name="name"
@@ -84,7 +84,7 @@ export default function ContactUs() {
                 className="w-full p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
             </div>
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <input
                 type="text"
                 name="phone"

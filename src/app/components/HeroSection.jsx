@@ -44,18 +44,18 @@ export default function HeroSection() {
   }, []);
 
   return (
-    <div className="flex h-screen mt-18">
+    <div className="flex flex-col lg:flex-row h-screen mt-10">
       {/* Left Side: Testimonials */}
-      <div className="w-1/2 p-8 bg-[#1c204e] flex flex-col mt-10 justify-center items-center space-y-6 text-white" style={{ borderRadius: '10px 0 0 10px' }}>
-        <h2 className="text-1xl font-semibold  mt-10 ">Special Offer</h2>
-        <h3 className="text-3xl font-bold">What They Say</h3>
-        <div className="text-center max-w-md">
-          <p className="text-lg italic">{testimonials[index].quote}</p>
+      <div className="w-full lg:w-1/2 p-6 lg:p-12 bg-[#1c204e] flex flex-col justify-center items-center text-white rounded-t-lg lg:rounded-l-lg space-y-6">
+        <h2 className="text-2xl lg:text-3xl font-semibold">Special Offer</h2>
+        <h3 className="text-4xl lg:text-5xl font-bold text-center">What They Say</h3>
+        <div className="text-center max-w-md mx-auto">
+          <p className="text-lg lg:text-xl italic">{testimonials[index].quote}</p>
           <p className="font-semibold mt-4">- {testimonials[index].name}</p>
         </div>
 
         {/* Carousel Navigation */}
-        <div className="flex justify-between w-full mt-6">
+        <div className="flex justify-center gap-6 mt-6">
           <button
             className="p-4 bg-gray-600 text-white rounded-full"
             onClick={() => {
@@ -83,18 +83,18 @@ export default function HeroSection() {
 
       {/* Right Side: Background Color & Image */}
       <div
-        className="w-1/2 relative bg-cover bg-center mt-10 overflow-hidden"
+        className="w-full lg:w-1/2 relative bg-cover bg-center overflow-hidden mt-6 lg:mt-0"
         style={{
           backgroundImage: "url('/bg-4.jpg')",
           backgroundColor: "var(--e-global-color-primary)", // Custom CSS variable for background color
-          borderRadius: '0 10px 10px 0' // Rounded corners on the right side
+          borderRadius: '10px',
         }}
       >
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center">
           {/* Heading for Special Offer */}
-          <div className="text-6xl animate-pulse">
+          <div className="text-4xl lg:text-6xl animate-pulse">
             <svg
-              className="w-16 h-16"
+              className="w-12 lg:w-16 h-12 lg:h-16"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 448 512"
             >
