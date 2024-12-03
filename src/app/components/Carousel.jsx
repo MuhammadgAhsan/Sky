@@ -34,7 +34,7 @@ const Carousel = () => {
                 <div className="mt-2 text-sm sm:text-base md:text-lg lg:text-xl text-white text-left w-[75%] sm:w-[80%] lg:w-[75%] xl:w-[75%]  mx-5">
                   {slide.description}
                 </div>
-                <button className="mt-4 bg-red-400 hover:bg-red-500 text-white text-sm sm:text-base md:text-lg px-4 py-2">
+                <button className="mt-4 ml-5 bg-red-400 hover:bg-red-500 text-white text-sm sm:text-base md:text-lg px-4 py-2">
                    <Link href="/services">View Services</Link> 
                 </button>
               </div>
