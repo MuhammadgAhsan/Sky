@@ -58,7 +58,7 @@ export default function ContactUs() {
             </div>
             <div className="flex items-center space-x-3">
               <span className="text-3xl text-blue-500">📧</span>
-              <p>info@homeservices4usa.com</p>
+              <p>info@fixexpertspro.com</p>
             </div>
           </div>
         </div>

@@ -1,6 +1,6 @@
 "use client";
-import { useState, useEffect } from 'react';
-
+import { useState } from 'react';
+import Link from "next/link";
 const Carousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const slides = [
@@ -26,11 +26,17 @@ const Carousel = () => {
               <img src={slide.img} alt={slide.title} className="w-full h-[80vh] object-cover" /> {/* Full cover image */}
               
               {/* Full overlay covering the image */}
-              <div className="absolute inset-0 bg-black bg-opacity-50 p-6">
-                {/* Updated text container with left and right margins */}
-                <div className="text-[73px] w-[60%] ml-20 text-white mx-5">{slide.title}</div> {/* Title font size set to 73px */}
-                <div className="mt-1 text-[17px]  ml-20 text-white mx-5">{slide.description}</div> {/* Description font size set to 17px */}
-                <button className="mt-4 bg-red-400  ml-20 hover:bg-red-500 text-white text-[17px] px-4 py-2 mx-5">View Services</button> {/* Button font size set to 17px */}
+              <div className="absolute inset-0  pl-20 bg-black bg-opacity-50 p-6 flex flex-col justify-center items-start">
+                {/* Left-aligned text container */}
+                <div className="text-white text-left w-[75%] sm:w-[80%] lg:w-[75%] xl:w-[75%] text-xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[73px] mx-5">
+                  {slide.title}
+                </div>
+                <div className="mt-2 text-sm sm:text-base md:text-lg lg:text-xl text-white text-left w-[75%] sm:w-[80%] lg:w-[75%] xl:w-[75%]  mx-5">
+                  {slide.description}
+                </div>
+                <button className="mt-4 bg-red-400 hover:bg-red-500 text-white text-sm sm:text-base md:text-lg px-4 py-2">
+                   <Link href="/services">View Services</Link> 
+                </button>
               </div>
             </div>
           ))}
@@ -38,16 +44,16 @@ const Carousel = () => {
 
         {/* Navigation buttons */}
         <button
-          className="absolute top-1/2 left-4 transform -translate-y-1/2 text-white bg-black bg-opacity-50 rounded-full p-3"
+          className="absolute top-1/2 left-4 transform -translate-y-1/2 text-white bg-black bg-opacity-50 rounded-full p-3 z-10"
           onClick={prevSlide}
         >
-          <span className="text-3xl">&lt;</span>
+          <span className="text-3xl">&lt;</span> {/* Previous button on the left side */}
         </button>
         <button
-          className="absolute top-1/2 right-4 transform -translate-y-1/2 text-white bg-black bg-opacity-50 rounded-full p-3"
+          className="absolute top-1/2 right-4 transform -translate-y-1/2 text-white bg-black bg-opacity-50 rounded-full p-3 z-10"
           onClick={nextSlide}
         >
-          <span className="text-3xl">&gt;</span>
+          <span className="text-3xl">&gt;</span> {/* Next button on the right side */}
         </button>
 
         {/* Dots for navigation */}
