@@ -50,7 +50,7 @@ export default function ContactUs() {
           <div className="space-y-4">
             {/* <div className="flex items-center space-x-3">
               <span className="text-3xl text-blue-500">📍</span>
-              <p>1012 MARQUEZ PL STE 106 B SANTA FE, NM 87505</p>
+              <p>1012 MARQUEZ PL  STE 106 B SANTA FE, NM 87505</p>
             </div> */}
             <div className="flex items-center space-x-3">
               <span className="text-3xl text-blue-500">📞</span>
