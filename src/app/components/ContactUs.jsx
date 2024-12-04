@@ -48,17 +48,17 @@ export default function ContactUs() {
           </p>
 
           <div className="space-y-4">
-            <div className="flex items-center space-x-3">
+            {/* <div className="flex items-center space-x-3">
               <span className="text-3xl text-blue-500">📍</span>
               <p>1012 MARQUEZ PL STE 106 B SANTA FE, NM 87505</p>
-            </div>
+            </div> */}
             <div className="flex items-center space-x-3">
               <span className="text-3xl text-blue-500">📞</span>
               <p>(630) 506-6081</p>
             </div>
             <div className="flex items-center space-x-3">
               <span className="text-3xl text-blue-500">📧</span>
-              <p>info@fixexpertspro.com</p>
+              <p>ranajawad78own@gmail.com</p>
             </div>
           </div>
         </div>
