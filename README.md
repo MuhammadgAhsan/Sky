@@ -22,4 +22,4 @@ useRouter() hook used (push)
 
  >url Query Params
 
- const {searchParams}=new URL(rea.url)
+ const {searchParams}=new URL(rea.url)# fixexpertspro
