@@ -39,7 +39,7 @@ const Navbars = () => {
                 FAQ
               </Link>
             </div>
-            <div className="absolute inset-y-0 left-1/2 transform -translate-x-1/2 flex items-center">
+            {/* <div className="absolute inset-y-0 left-1/2 transform -translate-x-1/2 flex items-center">
               <a
                 href="tel:(630)%20506-6081"
                 className="flex items-center space-x-2 text-black hover:text-black px-3 py-2 rounded-md text-sm font-medium"
@@ -54,7 +54,7 @@ const Navbars = () => {
                 </svg>
                 <span>(630) 506-6081</span>
               </a>
-            </div>
+            </div> */}
           </div>
 
           {/* Mobile Menu Button on the right */}

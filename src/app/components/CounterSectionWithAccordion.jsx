@@ -52,7 +52,7 @@ export default function CounterSectionWithAccordion() {
               <p>
                 We’re your one-stop destination for all your home improvement needs. From plumbing and electrical work to heating, ventilation, and cooling systems, as well as roof repairs and locksmith services, we’ve got you covered. Our skilled professionals deliver top-notch craftsmanship and reliable service to ensure your home is safe, comfortable, and functional. Trust us to handle every aspect of your home improvement projects with expertise and efficiency. Contact us today to experience the difference our comprehensive services can make for your home.
               </p>
-              <img
+              {/* <img
                 src="/image-example.jpg"
                 alt="Home Services"
                 className="mt-4 w-full rounded-lg opacity-0 transition-opacity duration-1000"
@@ -60,7 +60,7 @@ export default function CounterSectionWithAccordion() {
                   opacity: activeAccordion === "why-us" ? 1 : 0,
                   transition: "opacity 1s ease-in-out",
                 }}
-              />
+              /> */}
             </div>
           )}
         </div>
@@ -80,14 +80,13 @@ export default function CounterSectionWithAccordion() {
           {activeAccordion === "how-we-work" && (
             <div className="pl-4 mt-2 transition-all duration-500 opacity-100" style={{ color: "var(--e-global-color-primary)", maxHeight: "500px" }}>
               <p>
-                Welcome to Home 4 Flag Services, where we turn your dream home vision into reality through a seamless process designed with you in mind. Beginning with a thorough consultation, we listen attentively to your needs, preferences, and aspirations, shaping a personalized plan that fits your budget and timeline. Our skilled craftsmen execute each project with precision and expertise, utilizing quality materials and meticulous attention to detail to ensure superior results. Throughout the process, transparent communication keeps you informed and engaged, while our commitment to your satisfaction remains paramount.
-              </p>
+              Welcome to Fix Experts Pro Services, where we turn your dream home vision into reality through a seamless process designed with you in mind. Beginning with a thorough consultation, we listen attentively to your needs, preferences, and aspirations, shaping a personalized plan that fits your budget and timeline. Our skilled craftsmen execute each project with precision and expertise, utilizing quality materials and meticulous attention to detail to ensure superior results. Throughout the process, transparent communication keeps you informed and engaged, while our commitment to your satisfaction remains paramount. </p>
             </div>
           )}
         </div>
 
         {/* Accordion - Rates */}
-        <div className="mb-4">
+        {/* <div className="mb-4">
           <button
             onClick={() => toggleAccordion("rates")}
             className="flex items-center justify-between w-full text-left font-semibold text-lg lg:text-xl"
@@ -105,7 +104,7 @@ export default function CounterSectionWithAccordion() {
               </p>
             </div>
           )}
-        </div>
+        </div> */}
       </div>
 
       {/* Right Section: Counters */}

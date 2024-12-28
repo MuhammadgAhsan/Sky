@@ -64,7 +64,7 @@ export default function Footer() {
 
         {/* Copyright Section */}
         <p className="text-sm border-t border-gray-600 pt-4">
-          Home 4 Flag Services © 2024. All Rights Reserved.
+        Fix Experts Pro Services © 2024. All Rights Reserved.
         </p>
       </div>
     </footer>
